@@ -23,6 +23,12 @@ class Persona:
             print('el peso no puede ser menor a cero')
             peso=int(input('Ingrese el peso: '))
         self.__peso=peso
+
+    def setEdad(self,edad:int):
+        self.__edad=edad
+
+    def setGenero(self,genero:int):
+        self.__genero=genero
         
     #--------------Getters-------------------
     def getNombre(self):
@@ -33,6 +39,12 @@ class Persona:
     
     def getPeso(self):
         return self.__peso
+
+    def getEdad(self):
+        return self.__edad
+
+    def getGenero(self):
+        return self.__genero
 
     #--------------Metodos-------------------
     def IMC(self):
